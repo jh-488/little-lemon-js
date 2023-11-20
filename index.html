@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Little Lemon restaurant website" />
+    <meta name="og:title" content="Little Lemon" />
+    <meta
+      name="og:description"
+      content="Website for the Little Lemon restaurant"
+    />
+    <meta name="og:image" content="https://littlelemon.com/logo.png" />
+
+    <link rel="icon" href="./assets/logo.svg" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SwiperJS CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- SwiperJS Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <title>Little Lemon</title>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container flex">
+        <a href="#" class="nav-logo">
+          <img src="./assets/logo.png" alt="Little Lemon Logo" />
+        </a>        
+        <ul class="nav-menu flex">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#reservations" class="nav-link">Reservations</a></li>
+        </ul>
+        <div class="hamburger">
+            <span><i class="fa fa-bars"></i></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section id="heading" class="heading tb-padding">
+            <div class="container flex">
+                <div class="text">
+                    <h1 class="title">Little Lemon</h1>
+                    <h4 class="subtitle">Berlin</h4>
+                    <p class="paragraph">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+                    <button class="btn1">Reserve a Table</button>
+                </div>
+                <div class="image">
+                    <img src="./assets/restaurantfood.jpg" alt="Food cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about mtop tb-padding">
+            <div class="container flex">
+                <div class="text">
+                    <h1 class="title">About Us</h1>
+                    <h4 class="subtitle">Who we are ?</h4>
+                    <p class="paragraph">
+                        Welcome to Little Lemon, a warm and inviting Mediterranean
+                        restaurant that has been a labor of love for our family for
+                        generations. Nestled in the heart of Chicago, we take immense
+                        pride in bringing the rich flavors of the Mediterranean to your
+                        plate, with a contemporary twist that makes dining with us a truly
+                        unique and unforgettable experience.
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="./assets/mario-adrian.jpg" alt="about section image" />
+                </div>
+            </div>
+            <div class="container flex cards">
+                <div class="about-card">
+                    <div><i class="fa fa-bowl-food"></i></div>
+                    <h4>Traditional Recipes, Modern Twist</h4>
+                    <p>We believe in honoring the authenticity of Mediterranean cuisine, while also infusing it with a modern twist that excites the palate.</p>
+                </div>
+                <div class="about-card">
+                    <div><i class="fa fa-seedling"></i></div>
+                    <h4>Local and Sustainable Ingredients</h4>
+                    <p>We take our commitment to quality seriously. That's why we source our ingredients locally whenever possible, supporting our community.</p>
+                </div>
+                <div class="about-card">
+                    <div><i class="fa fa-hand-holding-heart"></i></div>
+                    <h4>Warm Hospitality and Inviting Atmosphere</h4>
+                    <p>At Little Lemon, we treat our guests like an extension of our own family. We are dedicated to providing exceptional service for your dining experience.</p>
+                </div>
+                <div class="about-card">
+                    <div><i class="fa fa-utensils"></i></div>
+                    <h4>A Culinary Journey and Gastronomic Adventure</h4>
+                    <p>Step inside Little Lemon and embark on a culinary journey that takes you through the vibrant streets of the Mediterranean.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="specials mtop tb-padding">
+            <div class="container">
+                <h1 class="title">This weeks specials!</h1>
+            </div>
+            <div class="swiper cards container mtop">
+                <div class="slide-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cover">
+                                <img src="./assets/specials/greek-salad.jpg" alt="Dish cover">
+                            </div>
+                            <div class="description">
+                                <div class="flex">
+                                    <h4>Greek salad</h4>
+                                    <h4 class="price">$ 12.99</h4>
+                                </div>
+                                <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cover">
+                                <img src="./assets/specials/bruschetta.jpg" alt="Dish cover">
+                            </div>
+                            <div class="description">
+                                <div class="flex">
+                                    <h4>Bruschetta</h4>
+                                    <h4 class="price">$ 5.99</h4>
+                                </div>
+                                <p>Our Bruschetta is made from our house grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cover">
+                                <img src="./assets/specials/lemon-dessert.jpg" alt="Dish cover">
+                            </div>
+                            <div class="description">
+                                <div class="flex">
+                                    <h4>Lemon Dessert</h4>
+                                    <h4 class="price">$ 5.00</h4>
+                                </div>
+                                <p>This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cover">
+                                <img src="./assets/specials/hummus-platter.jpg" alt="Dish cover">
+                            </div>
+                            <div class="description">
+                                <div class="flex">
+                                    <h4>Hummus Platter</h4>
+                                    <h4 class="price">$ 9.99</h4>
+                                </div>
+                                <p>Creamy and smooth hummus served with a drizzle of olive oil, a sprinkle of paprika, and warm house made pita bread for dipping.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cover">
+                                <img src="./assets/specials/shawarma-wrap.jpg" alt="Dish cover">
+                            </div>
+                            <div class="description">
+                                <div class="flex">
+                                    <h4>Chicken Shawarma Wrap</h4>
+                                    <h4 class="price">$ 10.99</h4>
+                                </div>
+                                <p>Tender marinated chicken shawarma wrapped in a warm pita with fresh vegetables, tahini sauce, and a touch of our secret spice blend.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cover">
+                                <img src="./assets/specials/baklava-dessert.jpg" alt="Dish cover">
+                            </div>
+                            <div class="description">
+                                <div class="flex">
+                                    <h4>Baklava</h4>
+                                    <h4 class="price">$ 5.99</h4>
+                                </div>
+                                <p>A sweet and flaky pastry made with layers of phyllo dough, crushed nuts and topped with honey, a perfect end to your meal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="swiper-button-prev swipe-btn"><i class="fa fa-arrow-left"></i></div>
+                <div class="swiper-button-next swipe-btn"><i class="fa fa-arrow-right"></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="reservations" class="reservations tb-padding">
+            <div class="container">
+                <div>
+                    <h1 class="title">Reserve a Table</h1>
+                    <h4 class="subtitle">Make a reservation online, easy and simple.</h4>
+                </div>
+                <div class="booking flex mtop">
+                    <div class="booking-image">
+                        <img src="./assets/restaurant.jpg" alt="The Restaurant">
+                    </div>
+                    <div class="form">
+                        <form action="/">
+                            <fieldset>
+                                <div class="field">
+                                    <label for="name">Name:</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Your Name"
+                                    />
+                                    <div class="error hidden">Please enter a name.</div>
+                                </div>
+                                <div class="field flex">
+                                    <div>
+                                        <label for="date">Choose a date:</label>
+                                        <input
+                                        type="date"
+                                        id="date"
+                                        name="date"
+                                        />
+                                        <div class="error hidden">Please enter a valid date.</div>
+                                    </div>
+                                    <div>
+                                        <label for="time">Choose a time:</label>
+                                        <select
+                                        id="time"
+                                        name="time"
+                                        >
+                                        <option value="">-- Please choose a time</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
+                                        </select>
+                                        <div class="error hidden">Please enter a time.</div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="guests">Number of guests:</label>
+                                    <input
+                                    type="number"
+                                    id="guests"
+                                    name="guests"
+                                    placeholder="How many guests ?"
+                                    />
+                                    <div class="error hidden">Number of guests must be betweeen 1 and 10</div>
+                                </div>
+                                <div class="field">
+                                    <label for="occasion">Occasion: <span>(optional)</span></label>
+                                    <select
+                                    id="occasion"
+                                    name="occasion"
+                                    >
+                                    <option value="">-- What's the occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="event">Event</option>
+                                    </select>
+                                </div>
+                                <button
+                                    type="submit"
+                                    id="submit-btn"
+                                    class="book-btn btn1"
+                                >
+                                    Book Now
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="confirmed mtop hide">
+                    <div className="container mtop">
+                        <div>
+                          <i class="fa fa-circle-check"></i>
+                        </div>
+                        <div class="text">
+                          <p>Thank You <span class="name-confirmed"></span>, you have successfully reserved a table!</p>
+                          <div>
+                              <h4 class="date-confirmed"></h4>
+                              <h4 class="time-confirmed"></h4>
+                              <h4>For <span class="guests-confirmed"></span></h4>
+                          </div>
+                          <p>See you by then.</p>
+                        </div>
+                        <button class="back-to-home btn1">
+                          Make another reservation
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mtop">
+        <div class="container grid3">
+            <div>
+                <img src="./assets/logo.png" alt="Little Lemon Logo">
+            </div>
+            <div class="content">
+                <h3>Opening<i class="fa fa-door-open"></i></h3>
+                <p>Monday - Sunday</p>
+                <p>19:00 - 21:30</p>
+            </div>
+            <div class="content">
+                <h3>Contact<i class="fa fa-address-book"></i></h3>
+                <p><i class="fa fa-location-dot"></i>123 Street, Berlin, Germany</p>
+                <p><i class="fa fa-phone"></i>012 345 6789</p>
+                <p><i class="fa fa-envelope"></i>littlelemon@example.com</p>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright mtop">
+            <span>© 2023 Little Lemon. Created by <i>JH</i>.</span>
+        </div>
+    </footer>
+  </body>
+</html>

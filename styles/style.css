@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --main-white: #fff;
+  --section-white: #f2f2f2;
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-yellow: #ffe5b4;
+  --primary-orange: #ee9972;
+  --secondary-orange: #fbdabb;
+  --highlight-gray: #edefee;
+  --primary-black: #515151;
+  --highlight-black: #333333;
+  --primary-red: #e13039;
+  --cool-gray: linear-gradient(
+    to right,
+    rgb(237, 239, 238) 0%,
+    rgb(213, 215, 214) 100%
+  );
+  --cool-green: linear-gradient(
+    to right,
+    rgb(109, 126, 120) 0%,
+    rgb(73, 94, 78) 100%
+  );
+
+  --swiper-pagination-color: var(--highlight-gray);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-white);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.mtop {
+  margin-top: 50px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.shadow {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+
+.title {
+  color: var(--primary-yellow);
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  color: var(--main-white);
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.paragraph {
+  color: var(--main-white);
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  padding: 30px 0;
+}
+
+.tb-padding {
+  padding: 50px 0;
+}
+
+.btn1 {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+    background-color: var(--primary-yellow);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+  }
+  .btn1:hover {
+    background-color: var(--secondary-orange);
+  }
+
+/* Header Styles*/
+header {
+  height: 8vh;
+  background-color: var(--main-white);
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 15px;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+}
+
+header ul {
+  margin: auto;
+  gap: 50px;
+}
+
+.nav-link {
+  color: var(--primary-green);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-yellow);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/*Main Styles*/
+.heading {
+  height: 50vh;
+  background-color: var(--primary-green);
+  box-shadow: 0 0 20px 0 rgb(73 94 87 / 80%);
+}
+
+.heading .flex {
+  align-items: normal;
+}
+
+.heading h1 {
+  font-size: 4rem;
+}
+
+.heading img {
+  width: 350px;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.heading .image {
+  position: relative;
+  z-index: 1;
+}
+
+.heading .image::before {
+  position: absolute;
+  content: "";
+  right: 5px;
+  top: -5px;
+  z-index: -1;
+  border-top: 2px solid var(--secondary-yellow);
+  border-left: 2px solid var(--secondary-yellow);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 0 rgb(255 229 180 / 50%);
+}
+
+/*-------------------------------------------------*/
+
+.about h4 {
+  color: var(--primary-green);
+}
+
+.about p {
+  color: var(--highlight-black);
+}
+
+.about .grid2 p {
+  font-size: 1.3rem;
+  padding: 5px 0;
+}
+
+.about img {
+  width: 500px;
+  margin-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgb(73 94 87 / 80%)
+}
+
+.about .cards {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.about .about-card {
+  width: 250px;
+  margin: 10px 20px;
+  padding: 10px;
+  background-color: var(--highlight-gray);
+  box-shadow: 0 0 5px 0 rgb(112 121 138 / 50%);
+  transition: all .5s ease;
+}
+
+.about .about-card:hover {
+  background-color: var(--secondary-yellow);
+}
+
+.about .about-card h4 {
+  font-size: 1rem;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+.about .about-card i {
+  color: var(--primary-green);
+  font-size: 3rem;
+}
+
+.about .about-card p {
+  font-size: 1rem;
+}
+
+/*-------------------------------------------------*/
+
+.specials {
+  background-color: var(--primary-green);
+  box-shadow: 0 0 20px 0 rgb(73 94 87 / 80%);
+}
+
+.slide-content {
+  margin: 0 80px;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  height: auto !important;
+  margin-bottom: 30px;
+  background-color: var(--highlight-gray);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgb(255 255 255 / 50%);
+}
+
+.swipe-btn i{
+  color: var(--main-white);
+  font-size: 1rem;
+  padding: 10px;
+  transition: color .3s ease;
+  background-image: var(--cool-green);
+  border-radius: 50px;
+  box-shadow: 0 0 5px 0 var(--primary-green);
+} 
+
+.swipe-btn i:hover {
+  color: var(--primary-yellow);
+}
+
+/* to not display default swiper arrows*/
+.swiper [class^="swiper-button-"]::after{
+  content: "";
+}
+
+.cards .description {
+  padding: 30px;
+}
+
+.cards h4 {
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cards .price {
+  color: var(--primary-orange);
+  font-size: 1rem;
+}
+
+.cards p {
+  font-family: "Roboto";
+  padding: 10px 0;
+  color: var(--highlight-black);
+}
+
+.cards img {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+/*-------------------------------------------*/
+
+.reservations .subtitle {
+  color: var(--primary-green);
+}
+
+.reservations .booking {
+  align-items: normal;
+  background-color: var(--primary-green);
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 80%);
+}
+
+
+.reservations .booking-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.reservations form {
+  background-color: var(--primary-black);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.reservations fieldset {
+  border: none;
+}
+
+.reservations .field {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+
+.reservations form label {
+  font-family: "Raleway";
+}
+
+.reservations input,
+select {
+  width: 320px;
+  background-color: var(--highlight-gray);
+  padding: 10px 30px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.reservations .invalid {
+  border: 2px solid var(--primary-red);
+}
+
+.reservations .error {
+  color: var(--primary-red);
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.reservations .hide {
+  display: none;
+}
+
+.reservations .hidden {
+  opacity: 0;
+}
+
+.reservations form span {
+  font-size: 1rem;
+}
+
+.reservations form {
+  padding: 30px;
+}
+
+.reservations label {
+  display: block;
+  color: var(--main-white);
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.reservations .book-btn {
+  width: 100%;
+}
+
+/*---------------------------------------------*/
+.confirmed {
+  text-align: center;
+}
+
+.confirmed i {
+  color: #50C878;
+  font-size: 15rem;
+}
+
+.confirmed h4 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary-green);
+}
+
+.confirmed p {
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--highlight-black);
+  padding: 10px;
+}
+
+.confirmed span {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+
+/*--------------------------------------------*/
+
+/* Footer Styles*/
+footer {
+  background-image: var(--cool-gray);
+  box-shadow: 0 0 10px 0 rgb(112 121 138 / 50%);
+}
+
+footer .grid3 {
+  padding-top: 50px;
+  grid-template-columns: 3fr 2fr 2fr;
+}
+
+footer .content {
+  padding-left: 20px;
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+footer img {
+  width: 300px;
+  height: auto;
+}
+
+footer h3 {
+  color: var(--primary-green);
+  font-family: "Ralway";
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: var(--highlight-black);
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  padding: 5px 0;
+}
+
+footer p i {
+  font-size: 1.2rem;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  padding: 10px 0; 
+}
+
+footer i {
+  color: var(--primary-green);
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+footer ul li i:hover {
+  color: var(--primary-yellow);
+}
+
+footer .copyright {
+  font-family: "Poppins";
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  background: var(--primary-green);
+  color: var(--main-white);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px 0 rgb(73 94 87 / 50%)
+}
+
+footer .copyright span i {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--primary-yellow);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+  /* Main Styles*/
+  .heading {
+    height: 38vh;
+  }
+
+  .heading img {
+    width: 250px;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*Header Styles */
+  header {
+    height: 10vh;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger span {
+    font-size: 2rem;
+    color: var(--primary-green);
+  }
+  .hamburger span:hover {
+    color: var(--primary-yellow);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--highlight-black);
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu li {
+    margin: 10px;
+  }
+
+  .nav-link {
+    color: var(--main-white);
+    font-size: 1rem;
+  }
+
+  .nav-menu.active {
+    top: 10vh;
+  }
+
+  /*Main Styles*/
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading p {
+    font-size: 1.2rem;
+    padding: 20px 0;
+  }
+
+  .heading button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .heading .image {
+    display: none;
+  }
+
+  /*-------------------------------------------*/
+  .about .container {
+    max-width: 80%;
+    flex-direction: column;
+  }
+
+  .about .container img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about .about-card {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .about .about-card:nth-child(4) {
+    margin: 0;
+  }
+
+  /*-------------------------------------------*/
+  .specials h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+
+  .slide-content {
+    margin: 0;
+  }
+
+  .swipe-btn {
+    display: none !important;
+  }
+
+  /*--------------------------------------------*/
+
+  .reservations .booking {
+    flex-direction: column;
+  }
+
+  .reservations .field.flex {
+    display: block;
+  }
+
+  .reservations .booking-image img,.reservations form {
+    border-radius: 5px;
+  }
+
+  .reservations input,
+  select {
+    width: 100%;
+  }
+
+  /* Footer Styles */
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
