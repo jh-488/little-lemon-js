@@ -135,7 +135,7 @@ header {
 
 header img {
   width: 180px;
-  height: auto;
+  height: 50px;
 }
 
 header ul {
@@ -217,6 +217,7 @@ header ul {
 
 .about img {
   width: 500px;
+  height: 350px;
   margin-left: 15px;
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgb(73 94 87 / 80%)
@@ -472,7 +473,7 @@ footer .content {
 
 footer img {
   width: 300px;
-  height: auto;
+  height: 100px;
 }
 
 footer h3 {
@@ -625,6 +626,7 @@ footer .copyright span i {
 
   .about .container img {
     width: 100%;
+    height: auto;
     margin: 0;
   }
 
