@@ -200,6 +200,10 @@ header ul {
   box-shadow: 0 0 5px 0 rgb(255 229 180 / 50%);
 }
 
+.heading button a {
+  color: black;
+}
+
 /*-------------------------------------------------*/
 
 .about h4 {
